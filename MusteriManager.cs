@@ -4,13 +4,13 @@ namespace ClassMetotDemo
 {
     public class MusteriManager
     {
-        public  Musteri[] musteriler;
+        
         public void Ekleme()
         {
           
            Console.WriteLine("Kaç Adet Müşteri Eklenecek?");
            int adet = Convert.ToInt32(Console.ReadLine());
-           musteriler = new Musteri[adet];
+           Musteri[]  musteriler = new Musteri[adet];
            for (int i = 0; i < adet; i++)
            {
                Console.WriteLine("Müşteri Adı:");
@@ -47,22 +47,22 @@ namespace ClassMetotDemo
            }
         }
 
-        public void Listeleme()
-        {
-            foreach (var item in musteriler)
-            {
-                Console.WriteLine("Müşteri Adı:" + item.Name);
-                Console.WriteLine("Müşteri Soyadı:" + item.SurName);
-                Console.WriteLine("Müsteri Cinsiyeti: " + item.Gender);
-                Console.WriteLine("Müsteri Doğum Tarihi:" + item.BirthDate);
-                Console.WriteLine("Müsteri Medeni Hali:" + item.MaritalStatus);
-                Console.WriteLine("Müsteri Yaşadığı Şehir:" + item.City);
-                Console.WriteLine("Müsteri Yaşadığı Ülke:" + item.Country);
-                Console.WriteLine("Müsteri Telefon Numarası:" + item.Phone);
-                Console.WriteLine("Müsteri E-Posta Adresi:" + item.Email);
-                Console.WriteLine("-----------------------------------------------------");
-            }
-        }
+        // public void Listeleme()
+        // {
+        //     foreach (var item in musteriler)
+        //     {
+        //         Console.WriteLine("Müşteri Adı:" + item.Name);
+        //         Console.WriteLine("Müşteri Soyadı:" + item.SurName);
+        //         Console.WriteLine("Müsteri Cinsiyeti: " + item.Gender);
+        //         Console.WriteLine("Müsteri Doğum Tarihi:" + item.BirthDate);
+        //         Console.WriteLine("Müsteri Medeni Hali:" + item.MaritalStatus);
+        //         Console.WriteLine("Müsteri Yaşadığı Şehir:" + item.City);
+        //         Console.WriteLine("Müsteri Yaşadığı Ülke:" + item.Country);
+        //         Console.WriteLine("Müsteri Telefon Numarası:" + item.Phone);
+        //         Console.WriteLine("Müsteri E-Posta Adresi:" + item.Email);
+        //         Console.WriteLine("-----------------------------------------------------");
+        //     }
+        // }
 
         public void Silme()
         {

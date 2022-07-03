@@ -21,7 +21,7 @@ namespace ClassMetotDemo
                     musteriManager.Ekleme();
                     break;
                 case 2:
-                    musteriManager.Listeleme();
+                    // musteriManager.Listeleme();
                     break;
                 case 3:
                     musteriManager.Silme();
