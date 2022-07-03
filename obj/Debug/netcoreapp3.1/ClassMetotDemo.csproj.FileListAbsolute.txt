@@ -1,0 +1,14 @@
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\bin\Debug\netcoreapp3.1\ClassMetotDemo.exe
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\bin\Debug\netcoreapp3.1\ClassMetotDemo.deps.json
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\bin\Debug\netcoreapp3.1\ClassMetotDemo.runtimeconfig.json
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\bin\Debug\netcoreapp3.1\ClassMetotDemo.runtimeconfig.dev.json
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\bin\Debug\netcoreapp3.1\ClassMetotDemo.dll
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\bin\Debug\netcoreapp3.1\ClassMetotDemo.pdb
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\obj\Debug\netcoreapp3.1\ClassMetotDemo.csproj.AssemblyReference.cache
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\obj\Debug\netcoreapp3.1\ClassMetotDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\obj\Debug\netcoreapp3.1\ClassMetotDemo.AssemblyInfoInputs.cache
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\obj\Debug\netcoreapp3.1\ClassMetotDemo.AssemblyInfo.cs
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\obj\Debug\netcoreapp3.1\ClassMetotDemo.csproj.CoreCompileInputs.cache
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\obj\Debug\netcoreapp3.1\ClassMetotDemo.dll
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\obj\Debug\netcoreapp3.1\ClassMetotDemo.pdb
+C:\Users\DELL\RiderProjects\CampIntro\ClassMetotDemo\obj\Debug\netcoreapp3.1\ClassMetotDemo.genruntimeconfig.cache
