@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ClassMetotDemo;
 
 public class Menu
 {
-    public static void Menus()
+    public  void Menus()
     {
         MusteriManager musteriManager = new MusteriManager();
         string programHeader = "Banka Müsteri Takip Sistemi v1.0";
@@ -18,9 +19,12 @@ public class Menu
         switch (menu) 
         {
             case 1:
-                musteriManager.Ekleme();
+                musteriManager.Ekleme(null);
                 break;
-            case 2: musteriManager.Listeleme();
+            case 2:
+            {
+                musteriManager.Listeleme(null);
+            }
                 break;
             case 3:
                 musteriManager.Silme();
@@ -39,4 +43,5 @@ public class Menu
                 break;
         }
     }
+    
 }
