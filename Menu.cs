@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace ClassMetotDemo;
 
@@ -36,7 +37,7 @@ public class Menu
                 }
                 break;
             case 3:
-                musteriManager.Silme();
+                musteriManager.Silme(musteris);
                 break;
             case 4:
                 Console.WriteLine("Güncelleme işlemi yapılacak");
@@ -56,6 +57,7 @@ public class Menu
 
     private void altmenu(List<Musteri> musteris)
     {
+        Console.Clear();
         MusteriManager musteriManager = new MusteriManager();
         string programMenu = "1-Müşteri Ekle\n2-Müşteri Listele\n3-Müşteri Sil\n4-Müşteri Güncelle\n5-Çıkış\nSeçiniz: ";
         string Header = "Banka Müsteri Takip Sistemi v1.0";
@@ -71,22 +73,24 @@ public class Menu
 
                 musteris = musteriManager.Ekleme();
                 Console.Write("Devam ");
-                char key = Convert.ToChar(Console.ReadLine().Trim().ToUpper());
-                if (key=='E')
-                {
-                    altmenu(musteris);
-                }
+                AltMenuSorgusu(musteris);
                 break;
             case 2:
                 {
                     musteriManager.Listeleme(musteris);
+                    AltMenuSorgusu(musteris);
+
                 }
                 break;
             case 3:
-                musteriManager.Silme();
+                musteriManager.Silme(musteris);
+                AltMenuSorgusu(musteris);
+
                 break;
             case 4:
                 Console.WriteLine("Güncelleme işlemi yapılacak");
+                AltMenuSorgusu(musteris);
+
                 break;
             case 5:
                 Console.WriteLine(programFooter);
@@ -97,6 +101,17 @@ public class Menu
 
                 Menus();
                 break;
+        }
+    }
+
+    private void AltMenuSorgusu(List<Musteri> musteris)
+    {
+        Thread.Sleep(5000);
+        Console.Clear();
+        char key = Convert.ToChar(Console.ReadLine().Trim().ToUpper());
+        if (key == 'E')
+        {
+            altmenu(musteris);
         }
     }
 }
