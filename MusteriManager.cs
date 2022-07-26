@@ -6,58 +6,63 @@ namespace ClassMetotDemo
 {
     public class MusteriManager
     {
-        private List<Musteri> musteriListesi; 
-        public void Ekleme(Musteri musteriListesi)
+        public List<Musteri> musteriListesi;
+        
+        public List<Musteri> EklemeListe()
         {
-            #region List<Musteri> musteriListesi  
-            //  int adet= 0;
-           // Console.WriteLine("Kaç Adet Müşteri Eklenecek?");
-           //  adet= Convert.ToInt32(Console.ReadLine());
-           // musteriListesi=Enumerable.Range(0, adet).Select(_ => new Musteri()).ToList();
-           // for (int i = 0; i < adet; i++)
-           // {
-           //     Console.WriteLine("Müşteri Adı:");
-           //     musteriListesi[i].Name=Console.ReadLine();
-           //     Console.WriteLine("Müşteri Soyadı:");
-           //     musteriListesi[i].SurName=Console.ReadLine();
-           //     Console.WriteLine("Müşteri Cinsiyeti:");
-           //     char ch;
-           //     char.TryParse(Console.ReadLine(), out ch);
-           //     musteriListesi[i].Gender = ch;
-           //     Console.WriteLine("Enter a date: ");
-           //     DateTime userDateTime;
-           //     if (DateTime.TryParse(Console.ReadLine(), out userDateTime))
-           //     {
-           //         Console.WriteLine("The day of the week is: " + userDateTime.DayOfWeek);
-           //     }
-           //     else
-           //     {
-           //         Console.WriteLine("You have entered an incorrect value");
-           //     }
-           //     musteriListesi[i].BirthDate=userDateTime;
-           //     Console.WriteLine("Medeni Hali:");
-           //      musteriListesi[i].MaritalStatus = Console.ReadLine();
-           //      Console.WriteLine("Yaşadınız Şehir:");
-           //      musteriListesi[i].City = Console.ReadLine();
-           //      Console.WriteLine("Yaşadınız ülke:");
-           //      musteriListesi[i].Country = Console.ReadLine();
-           //      Console.WriteLine("Müşteri Telefon Numarası:");
-           //      musteriListesi[i].Phone = Console.ReadLine();
-           //      Console.WriteLine("Müşteri E-Posta Adresi:");
-           //      musteriListesi[i].Email = Console.ReadLine();
-           //      
-           //      Console.Write("Devam etmek istiyor musun?E/H :");
-           //      char Answer=Convert.ToChar(Console.ReadLine().Trim().ToUpper());
-           //      if (Answer=='E')
-           //      {
-           //          Menu menu = new Menu();
-           //          menu.Menus();
-           //      }
-           // }
-            
+            #region 
+            List<Musteri> musteriListesi1; 
+            int adet = 0;
+            Console.WriteLine("Kaç Adet Müşteri Eklenecek?");
+            adet = Convert.ToInt32(Console.ReadLine());
+            musteriListesi1 = Enumerable.Range(0, adet).Select(_ => new Musteri()).ToList();
+            for (int i = 0; i < adet; i++)
+            {
+                Console.WriteLine("Müşteri Adı:");
+                musteriListesi1[i].Name = Console.ReadLine();
+                Console.WriteLine("Müşteri Soyadı:");
+                musteriListesi1[i].SurName = Console.ReadLine();
+                Console.WriteLine("Müşteri Cinsiyeti:");
+                //char ch;
+                //char.TryParse(Console.ReadLine(), out ch);
+                //musteriListesi1[i].Gender = ch;
+                //Console.WriteLine("Enter a date: ");
+                //DateTime userDateTime;
+                //if (DateTime.TryParse(Console.ReadLine(), out userDateTime))
+                //{
+                //    Console.WriteLine("The day of the week is: " + userDateTime.DayOfWeek);
+                //}
+                //else
+                //{
+                //    Console.WriteLine("You have entered an incorrect value");
+                //}
+                //musteriListesi1[i].BirthDate = userDateTime;
+                //Console.WriteLine("Medeni Hali:");
+                //musteriListesi1[i].MaritalStatus = Console.ReadLine();
+                //Console.WriteLine("Yaşadınız Şehir:");
+                //musteriListesi1[i].City = Console.ReadLine();
+                //Console.WriteLine("Yaşadınız ülke:");
+                //musteriListesi1[i].Country = Console.ReadLine();
+                //Console.WriteLine("Müşteri Telefon Numarası:");
+                //musteriListesi1[i].Phone = Console.ReadLine();
+                //Console.WriteLine("Müşteri E-Posta Adresi:");
+                //musteriListesi1[i].Email = Console.ReadLine();
+
+           
+            }
+          
+          
+            return (musteriListesi1);
+
 
             #endregion
-          
+
+        }
+
+        public List<Musteri> Ekleme()
+        {
+            musteriListesi = EklemeListe();
+            return musteriListesi;
         }
 
         public void Listeleme(List<Musteri> musteriListesi)
